@@ -13,7 +13,7 @@ const NavBar = () => {
                 <NavItem to={'movies'} key={'movies'}>
                     Movies
                 </NavItem>
-      </P>
+            </P>
         </Div>
     )
 }
