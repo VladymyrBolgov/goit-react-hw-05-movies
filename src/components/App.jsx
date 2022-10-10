@@ -22,7 +22,7 @@ const App = () => {
             <Route path='cast' element={<Cast />} />
             <Route path='reviews' element={<Reviews />} />
           </Route>
-          
+
         </Route>
       </Routes>
     </>
