@@ -17,10 +17,10 @@ const fetchTrendData = async () => {
    }
 };
 
-const fetchSearchData = async value => {
+const fetchSearchData = async query => {
    try {
       const { data } = await axios.get(
-         `${SEARCH_URL}?api_key=${KEY}&query=${value}&page=1`
+         `${SEARCH_URL}?api_key=${KEY}&query=${query}&page=1`
       );
       return data.results;
    } catch (error) {
