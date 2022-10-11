@@ -5,7 +5,7 @@ import {Div, P} from 'components/Wrappers/Wrappers'
 
 const Reviews = () => {
     const { movieId } = useParams();
-    const [reviews, setReviews] = useState;
+    const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
         fetchDataByReviews(movieId).then(setReviews);
