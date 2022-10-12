@@ -7,7 +7,7 @@ export const StyledLink = styled(Link)`
   font-size: ${p=>p.theme.fontSizes.m};
   text-decoration: none;
   &:hover {
-    color: orange;
+    color: red;
     background: ${p=>p.theme.colors.accent};
   }
 `;
@@ -20,7 +20,7 @@ export const BackLink = styled(Link)`
   border-radius: ${p=>p.theme.radii.normal};
   text-decoration: none;
   &:hover {
-    color: orange;
+    color: red;
   }
 `;
 
@@ -30,6 +30,6 @@ export const StyledInfoLink = styled(Link)`
   font-size: ${p=>p.theme.fontSizes.m};
   text-decoration: none;
   &:hover {
-    color: orange;
+    color: red;
   }
 `;
