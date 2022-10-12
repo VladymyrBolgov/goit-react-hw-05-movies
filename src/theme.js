@@ -1,7 +1,7 @@
 export const theme = {
     colors: {
       text: 'black',
-      accent: '#357fb5',
+      accent: '#008080',
     },
     space: [0,4,8,16,32,64,128,256],
     radii: {
