@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import {Div, P} from 'components/Wrappers/Wrappers'
 
 const Cast = () => {
-
     const { movieId } = useParams
     const [cast, setCast] = useState([]);
 
@@ -12,6 +11,8 @@ const Cast = () => {
         fetchDataByCast(movieId).then(setCast)
     }, [movieId])
     
+    if (!cast) return;
+
     return (
         <Div>
             <Div as="ul" display="flex" width="1/1" p="0" flexWrap="wrap">

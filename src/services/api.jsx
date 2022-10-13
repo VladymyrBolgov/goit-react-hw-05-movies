@@ -44,7 +44,7 @@ const fetchDataByCast = async id => {
       const { data } = await axios.get(
          `${MOVIE_ID_URL}${id}/credits?api_key=${KEY}`
       );
-      return data;
+      return data.cast;
    } catch (error) {
       console.error('Something wrong! Can not search films by ID' + error);
    }
@@ -55,7 +55,7 @@ const fetchDataByReviews = async id => {
       const { data } = await axios.get(
          `${MOVIE_ID_URL}${id}/reviews?api_key=${KEY}`
       );
-      return data;
+      return data.results;
    } catch (error) {
       console.error('Something wrong! Can not search films by ID' + error);
    }

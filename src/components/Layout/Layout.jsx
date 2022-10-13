@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 import { Div } from '../Wrappers/Wrappers';
 import { Suspense } from 'react';
 
-
 const Layout = () => {
     return (
         <Div>
