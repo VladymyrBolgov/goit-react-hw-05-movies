@@ -1,5 +1,5 @@
 import SearchBar from '../../components/SearchBar/SearchBar';
-import { fetchSearchData } from '../../services/api';
+import { fetchSearchData } from 'services/api';
 import { Div } from 'components/Wrappers/Wrappers';
 import { StyledLink } from '../../components/commonStyled';
 import { useLocation, useSearchParams } from 'react-router-dom';
