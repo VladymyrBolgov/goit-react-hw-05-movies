@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import {Div, P} from 'components/Wrappers/Wrappers'
 
 const Cast = () => {
-    const { movieId } = useParams
+    const { movieId } = useParams();
     const [cast, setCast] = useState([]);
 
     useEffect(() => {
